@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.full-width-image {
+    width: 100%;       /* fills the width of the page */
+    height: 50vh;      /* half of the viewport height */
+    object-fit: cover; /* keeps proportions while cropping if needed */
+    display: block;
+}
