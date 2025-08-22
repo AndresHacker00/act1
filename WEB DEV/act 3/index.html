@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Actividad 3</title>
+<style>
+    canvas{
+        border: 3px solid brown;
+        background-color: white;
+    }
+</style>
+<script>
+    window.onload = function draw() {
+        const canvas = document.getElementById("micanvas");
+        if (canvas.getContext) {
+            const ctx = canvas.getContext("2d");
+
+            // Big black filled square
+            ctx.fillRect(25, 25, 100, 100);
+            ctx.clearRect(45, 45, 60, 60);
+            ctx.strokeRect(50, 50, 50, 50);
+
+            // Blue small square (no fill)
+            ctx.strokeStyle = "blue";
+            ctx.strokeRect(60, 60, 15, 15);
+
+            // Red small square (no fill)
+            ctx.strokeStyle = "red";
+            ctx.strokeRect(95, 60, 15, 15);
+
+            // Reset strokeStyle if needed
+            ctx.strokeStyle = "black";
+        }
+    }
+</script>
+
+  </head>
+<body>
+   <canvas id="micanvas" width="800" height="600"></canvas>
+</body>
+</html>
